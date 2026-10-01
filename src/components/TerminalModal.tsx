@@ -53,7 +53,7 @@ BIO: ${PERSONAL_DATA.intro}`;
     } else if (trimmed === 'naitik experience') {
       output = EXPERIENCES.map(e => `• ${e.role} @ ${e.company} [${e.period}]\n  ${e.highlights.join('\n  ')}`).join('\n\n');
     } else if (trimmed === 'naitik contact') {
-      output = `EMAIL: ${PERSONAL_DATA.contact.email}\nPHONE: ${PERSONAL_DATA.contact.phone}\nGITHUB: ${PERSONAL_DATA.contact.github}\nLINKEDIN: ${PERSONAL_DATA.contact.linkedin}`;
+      output = `EMAIL: ${PERSONAL_DATA.contact.email}\nGITHUB: ${PERSONAL_DATA.contact.github}\nLINKEDIN: ${PERSONAL_DATA.contact.linkedin}`;
     } else {
       output = `Command not recognized: "${trimmed}". Type "naitik --help" for available commands.`;
     }

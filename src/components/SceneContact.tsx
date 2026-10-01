@@ -55,12 +55,6 @@ export const SceneContact: React.FC = () => {
               </a>
             </div>
 
-            <div className="p-4 rounded-2xl bg-cream-card border border-beige-border">
-              <span className="text-[10px] text-dark-text/60 uppercase block">PHONE</span>
-              <a href={`tel:${PERSONAL_DATA.contact.phone.replace(/\s+/g, '')}`} className="text-lg font-bold text-teal-deep hover:underline">
-                {PERSONAL_DATA.contact.phone}
-              </a>
-            </div>
 
             {/* Verified Social Profile Links */}
             <div className="flex flex-wrap gap-3 pt-2">

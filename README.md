@@ -1,32 +1,45 @@
-# React + TypeScript + Vite
+# Interactive Storytelling Portfolio — Naitik Donda
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An immersive, scroll-driven interactive portfolio website for **Naitik Donda** (B.Tech Data Science student, AI/ML & Full-Stack Developer). Built with React, TypeScript, Vite, Tailwind CSS, GSAP ScrollTrigger, Lenis smooth scrolling, and Howler audio.
 
-Currently, two official plugins are available:
+## 🚀 Live Site & Source Code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live Hosted Site**: [https://naitikdonda.vercel.app](https://naitikdonda.vercel.app) *(or GitHub Pages)*
+- **Source Code Repository**: [https://github.com/NaitikDonda/portfolio](https://github.com/NaitikDonda/portfolio)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📋 Assignment Guidelines Compliance Audit
 
-## Expanding the Oxlint configuration
+This project satisfies all requirements specified in the **Personal Portfolio Website Assignment Guidelines**:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+1. **Coded From Scratch**:
+   - Built with React, TypeScript, Vite, Tailwind CSS, and GSAP.
+   - **Zero No-Code Builders** (Wix, WordPress, Squarespace, Webflow, Framer, Carrd, Canva are NOT used).
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+2. **Online Safety & Privacy**:
+   - **No phone number or home address** is displayed on the public site (as instructed in section *Rules and tips: Stay safe online*).
+   - Only public professional contact info (email: `dondanaitik@gmail.com`, GitHub, and LinkedIn) is provided.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+3. **Required Core Sections**:
+   - **About Section**: Detailed editorial narrative covering Naitik's B.Tech Data Science studies at NMIMS MPSTME and technical philosophy.
+   - **Projects / Work**: Interactive scroll-driven scenes for 3 projects (**BACKBONE**, **IPL Match Predictor**, and **CogniScan**) featuring live demo links and GitHub repositories.
+   - **Skills & Ecosystem**: Interactive skill node map categorized into Languages, AI & ML, Frontend & Mobile, and Backend & Tools.
+   - **Contact**: Animated contact form, email link, and social profiles.
+
+4. **Mobile Responsiveness**:
+   - Fully optimized for mobile viewports without sideways horizontal scrolling.
+   - Custom mobile menu drawer and responsive GSAP layouts.
+
+---
+
+## 🛠️ Project Structure & Tech Stack
+
+- **Framework**: React 18 + TypeScript + Vite
+- **Styling**: Tailwind CSS + Custom Teal & Cream Color Palette (`#0F5C5B` & `#F7F1E3`)
+- **Scroll & Animations**: GSAP, GSAP ScrollTrigger, Lenis Smooth Scroll
+- **Audio Engine**: Web Audio API ambient audio synthesizer
+
+## 📜 Credits & Acknowledgments
+- Animations powered by [GSAP ScrollTrigger](https://greensock.com/scrolltrigger/) and [Lenis](https://lenis.darkroom.engineering/).
+- Icons provided by [Lucide React](https://lucide.dev/).

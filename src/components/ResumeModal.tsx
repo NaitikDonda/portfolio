@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, GraduationCap, Briefcase, Code, Award, Mail, Phone, MapPin } from 'lucide-react';
+import { X, Download, GraduationCap, Briefcase, Code, Award, Mail, MapPin } from 'lucide-react';
 import { PERSONAL_DATA, PROJECTS, EXPERIENCES, EDUCATION_LIST, SKILL_CATEGORIES } from '../data/portfolioData';
 
 interface ResumeModalProps {
@@ -76,10 +76,6 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 text-teal-deep" />
               <span>{PERSONAL_DATA.contact.email}</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4 text-teal-deep" />
-              <span>{PERSONAL_DATA.contact.phone}</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4 text-teal-deep" />
