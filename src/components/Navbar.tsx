@@ -88,13 +88,7 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal, onOpenTerminalModal, currentScene }) => {
-  const [isSoundOn, setIsSoundOn] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const handleSoundToggle = () => {
-    const active = soundInstance.toggleSound();
-    setIsSoundOn(active);
-  };
 
   const navItems = [
     { label: 'HOME', href: '#scene-01' },
@@ -158,19 +152,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal, onOpenTermina
             <span className="text-dark-text/40">/</span>
             <span className="text-dark-text/60">11</span>
           </div>
-
-          <button
-            onClick={handleSoundToggle}
-            className={`px-3 py-1.5 rounded-full border text-xs font-mono transition-all flex items-center space-x-1.5 shadow-sm ${
-              isSoundOn
-                ? 'bg-teal-deep text-cream-soft border-teal-deep'
-                : 'bg-cream-card text-dark-text/70 border-beige-border hover:border-teal-deep'
-            }`}
-            title="Toggle Ambient Audio Experience"
-          >
-            <span className="w-2 h-2 rounded-full bg-current animate-pulse" />
-            <span>{isSoundOn ? 'SOUND ON' : 'SOUND OFF'}</span>
-          </button>
 
           <button
             onClick={() => {
