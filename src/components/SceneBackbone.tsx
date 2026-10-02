@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Download } from 'lucide-react';
 import { PROJECTS } from '../data/portfolioData';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -84,6 +85,17 @@ export const SceneBackbone: React.FC = () => {
                 className="px-5 py-2.5 bg-teal-deep text-cream-soft rounded-full font-medium hover:bg-teal-dark transition-all shadow flex items-center space-x-2"
               >
                 <span>GITHUB REPOSITORY ↗</span>
+              </a>
+            )}
+            {backboneProject?.apkUrl && (
+              <a
+                href={backboneProject.apkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 bg-cream-card text-teal-deep border border-teal-deep/30 rounded-full font-medium hover:bg-teal-deep hover:text-cream-soft transition-all shadow flex items-center space-x-2"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>DOWNLOAD APK ↗</span>
               </a>
             )}
           </div>

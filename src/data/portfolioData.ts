@@ -12,6 +12,7 @@ export interface Project {
   visualType: 'timeline' | 'analytics' | 'multimodal';
   githubUrl?: string;
   liveUrl?: string;
+  apkUrl?: string;
 }
 
 export interface Experience {
@@ -86,7 +87,8 @@ export const PROJECTS: Project[] = [
       "Engineered & validated over 40+ AI evaluation documents"
     ],
     visualType: "timeline",
-    githubUrl: "https://github.com/naitikdonda/backbone"
+    githubUrl: "https://github.com/naitikdonda/backbone",
+    apkUrl: "https://drive.google.com/file/d/1HUdhVtMzXOidXVis7lWOlW6ZiLbRXFfX/view?usp=drive_link"
   },
   {
     id: "ipl-predictor",

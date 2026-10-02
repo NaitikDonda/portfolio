@@ -49,7 +49,7 @@ STATUS: ${PERSONAL_DATA.status} (${PERSONAL_DATA.batch})
 LOCATION: ${PERSONAL_DATA.contact.location}
 BIO: ${PERSONAL_DATA.intro}`;
     } else if (trimmed === 'naitik projects') {
-      output = PROJECTS.map(p => `[${p.sceneNumber}] ${p.title} (${p.category})\n    Tech: ${p.tech.join(', ')}\n    Desc: ${p.description}`).join('\n\n');
+      output = PROJECTS.map(p => `[${p.sceneNumber}] ${p.title} (${p.category})\n    Tech: ${p.tech.join(', ')}\n    Desc: ${p.description}${p.apkUrl ? `\n    APK: ${p.apkUrl}` : ''}`).join('\n\n');
     } else if (trimmed === 'naitik experience') {
       output = EXPERIENCES.map(e => `• ${e.role} @ ${e.company} [${e.period}]\n  ${e.highlights.join('\n  ')}`).join('\n\n');
     } else if (trimmed === 'naitik contact') {
